@@ -3,7 +3,7 @@
 Landing page for a coffee roastery in Jeddah (fictional brand, made for my portfolio).
 Arabic by default with an English toggle.
 
-**Live:** _link coming soon_
+**Live:** https://areejalabbasi.github.io/saraab-rostery/
 
 ![screenshot](assets/screenshot-desktop.png)
 
