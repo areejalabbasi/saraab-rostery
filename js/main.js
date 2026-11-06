@@ -1,12 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuGrid = document.getElementById("menuGrid");
-  const chips = document.querySelectorAll(".chip");
+  const chips = document.querySelectorAll(".tab");
   const langToggle = document.getElementById("langToggle");
   const menuToggle = document.getElementById("menuToggle");
   const nav = document.getElementById("nav");
   let currentFilter = "all";
 
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  // roast card always shows today's date
+  const now = new Date();
+  document.getElementById("roastDate").textContent =
+    `${String(now.getDate()).padStart(2, "0")}/${String(now.getMonth() + 1).padStart(2, "0")}/${now.getFullYear()}`;
 
   i18n.onChange((lang) => {
     langToggle.textContent = lang === "ar" ? "EN" : "ع";

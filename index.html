@@ -3,100 +3,85 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>سراب | محمصة وقهوة مختصة في جدة</title>
-  <meta name="description" content="محمصة سراب في جدة: قهوة مختصة محمصة يوميًا، حلويات منزلية، وحجز طاولات أونلاين.">
+  <title>سراب | محمصة قهوة في جدة</title>
+  <meta name="description" content="محمصة سراب في جدة: قهوة مختصة محمصة يوميًا، حلى منزلي، وحجز طاولات أونلاين.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Almarai:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#top" aria-label="سراب">
-        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 22c4-3 8-3 12 0s8 3 12 0" /><path d="M4 16c4-3 8-3 12 0s8 3 12 0" opacity=".55"/><circle cx="16" cy="8" r="3"/></svg>
-        <span data-i18n="brand">سراب</span>
-      </a>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="logo" href="#home" data-i18n="brand">سراب</a>
       <nav class="nav" id="nav">
         <a href="#menu" data-i18n="nav.menu">المنيو</a>
-        <a href="#story" data-i18n="nav.story">قصتنا</a>
-        <a href="#visit" data-i18n="nav.visit">زورونا</a>
-        <a href="#book" class="btn btn-small" data-i18n="nav.book">احجز طاولة</a>
+        <a href="#roast" data-i18n="nav.story">قصتنا</a>
+        <a href="#visit" data-i18n="nav.visit">الموقع</a>
+        <a href="#book" class="nav-book" data-i18n="nav.book">احجز طاولة</a>
       </nav>
-      <div class="header-actions">
-        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav">
-          <span></span><span></span>
-        </button>
-      </div>
+      <button class="lang" id="langToggle" type="button" aria-label="Switch language">EN</button>
+      <button class="burger" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="القائمة">
+        <span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <main id="top">
+  <main id="home">
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">محمصة مختصة · حي الشاطئ، جدة</p>
-          <h1 data-i18n="hero.title">قهوة تُحمَّص كل صباح، على بُعد خطوات من البحر</h1>
-          <p class="lead" data-i18n="hero.lead">نختار البن من مزارع صغيرة في إثيوبيا وكولومبيا واليمن، ونحمّصه بكميات قليلة عشان يوصلك طازج.</p>
-          <div class="hero-cta">
-            <a href="#book" class="btn" data-i18n="hero.cta">احجز طاولتك</a>
-            <a href="#menu" class="btn btn-ghost" data-i18n="hero.cta2">شوف المنيو</a>
-          </div>
-          <ul class="hero-stats">
-            <li><strong>12</strong><span data-i18n="stats.origins">مصدر بن</span></li>
-            <li><strong>4.8</strong><span data-i18n="stats.rating">تقييم الزوار</span></li>
-            <li><strong>7ص</strong><span data-i18n="stats.open">نفتح يوميًا</span></li>
-          </ul>
+      <div class="hero-text">
+        <h1 data-i18n="hero.title">قهوة تتحمّص كل صباح، قريب من البحر</h1>
+        <p data-i18n="hero.lead">محمصة صغيرة في حي الشاطئ بجدة. نجيب البن من مزارع نعرفها في إثيوبيا وكولومبيا واليمن، ونحمّصه دفعات صغيرة.</p>
+        <div class="hero-actions">
+          <a href="#book" class="btn" data-i18n="hero.cta">احجز طاولة</a>
+          <a href="#menu" class="link" data-i18n="hero.cta2">شوف المنيو</a>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="cup">
-            <div class="steam"><i></i><i></i><i></i></div>
-            <div class="cup-body"></div>
-            <div class="cup-handle"></div>
-            <div class="saucer"></div>
-          </div>
-        </div>
+      </div>
+      <div class="roshan" aria-hidden="true">
+        <div class="roshan-frame"><div class="lattice"></div></div>
       </div>
     </section>
 
-    <section class="section" id="menu">
-      <div class="container">
-        <div class="section-head">
+    <section class="menu" id="menu">
+      <div class="wrap">
+        <div class="menu-head">
           <h2 data-i18n="menu.title">المنيو</h2>
-          <div class="filters" role="tablist" aria-label="Menu categories">
-            <button class="chip is-active" data-filter="all" data-i18n="menu.all">الكل</button>
-            <button class="chip" data-filter="hot" data-i18n="menu.hot">حار</button>
-            <button class="chip" data-filter="cold" data-i18n="menu.cold">بارد</button>
-            <button class="chip" data-filter="sweet" data-i18n="menu.sweet">حلى</button>
+          <div class="tabs" role="tablist" aria-label="Menu categories">
+            <button class="tab is-active" data-filter="all" data-i18n="menu.all">الكل</button>
+            <button class="tab" data-filter="hot" data-i18n="menu.hot">حار</button>
+            <button class="tab" data-filter="cold" data-i18n="menu.cold">بارد</button>
+            <button class="tab" data-filter="sweet" data-i18n="menu.sweet">حلى</button>
           </div>
         </div>
-        <div class="menu-grid" id="menuGrid"></div>
+        <ul class="board" id="menuGrid"></ul>
       </div>
     </section>
 
-    <section class="section section-alt" id="story">
-      <div class="container story-grid">
-        <div>
-          <h2 data-i18n="story.title">من فكرة صغيرة إلى محمصة الحي</h2>
-          <p data-i18n="story.p1">بدأنا بمحمصة منزلية وأصدقاء يجربون كل دفعة. اليوم نحمّص أكثر من 40 كيلو بالأسبوع، وما زلنا نتذوق كل دفعة قبل ما تطلع.</p>
-          <p data-i18n="story.p2">كل كوب يجيك بورقة صغيرة فيها مصدر البن وتاريخ التحميص.</p>
+    <section class="roast" id="roast">
+      <div class="wrap roast-inner">
+        <div class="roast-text">
+          <h2 data-i18n="story.title">بدينا بمحمصة في البيت</h2>
+          <p data-i18n="story.p1">كنا نحمّص لأصحابنا ونسمع رأيهم في كل دفعة. اليوم نحمّص أكثر من 40 كيلو بالأسبوع، وما زلنا نتذوق كل دفعة قبل ما تطلع.</p>
+          <p data-i18n="story.p2">مع كل كوب تجيك بطاقة صغيرة مثل هذي، فيها من وين البن ومتى تحمّص.</p>
         </div>
-        <ul class="features">
-          <li><span>01</span><div><h3 data-i18n="f1.t">تحميص يومي</h3><p data-i18n="f1.d">دفعات صغيرة كل صباح، ما نخزّن أكثر من أسبوع.</p></div></li>
-          <li><span>02</span><div><h3 data-i18n="f2.t">بن من مصدره</h3><p data-i18n="f2.d">نتعامل مباشرة مع مزارع نعرفها بالاسم.</p></div></li>
-          <li><span>03</span><div><h3 data-i18n="f3.t">حلى منزلي</h3><p data-i18n="f3.d">كيك وكوكيز نخبزها في نفس اليوم.</p></div></li>
-        </ul>
+        <figure class="ticket">
+          <dl>
+            <div><dt data-i18n="card.origin">المصدر</dt><dd data-i18n="card.originV">يرغاتشيفي، إثيوبيا</dd></div>
+            <div><dt data-i18n="card.roasted">تاريخ التحميص</dt><dd id="roastDate" dir="ltr"></dd></div>
+            <div><dt data-i18n="card.notes">النكهات</dt><dd data-i18n="card.notesV">ياسمين، ليمون، عسل</dd></div>
+            <div><dt data-i18n="card.brew">طريقة التحضير</dt><dd>V60</dd></div>
+          </dl>
+        </figure>
       </div>
     </section>
 
-    <section class="section" id="book">
-      <div class="container book-grid">
-        <div>
+    <section class="book" id="book">
+      <div class="wrap book-inner">
+        <div class="book-text">
           <h2 data-i18n="book.title">احجز طاولة</h2>
-          <p class="muted" data-i18n="book.lead">نأكد لك الحجز برسالة واتساب خلال ساعة.</p>
+          <p data-i18n="book.lead">نأكد لك الحجز برسالة واتساب خلال ساعة.</p>
         </div>
-        <form class="book-form" id="bookForm" novalidate>
+        <form class="form" id="bookForm" novalidate>
           <div class="field">
             <label for="name" data-i18n="form.name">الاسم</label>
             <input id="name" name="name" autocomplete="name" required>
@@ -107,7 +92,7 @@
             <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="05XXXXXXXX" dir="ltr" required>
             <small class="error" data-for="phone"></small>
           </div>
-          <div class="field-row">
+          <div class="row">
             <div class="field">
               <label for="date" data-i18n="form.date">التاريخ</label>
               <input id="date" name="date" type="date" required>
@@ -118,37 +103,36 @@
               <select id="time" name="time" required></select>
               <small class="error" data-for="time"></small>
             </div>
-            <div class="field">
-              <label for="guests" data-i18n="form.guests">عدد الأشخاص</label>
+            <div class="field field-small">
+              <label for="guests" data-i18n="form.guests">كم شخص</label>
               <select id="guests" name="guests">
                 <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
               </select>
             </div>
           </div>
-          <button class="btn btn-block" type="submit" data-i18n="form.submit">أرسل طلب الحجز</button>
-          <p class="form-success" id="formSuccess" role="status" hidden></p>
+          <button class="btn btn-light" type="submit" data-i18n="form.submit">أرسل طلب الحجز</button>
+          <p class="done" id="formSuccess" role="status" hidden></p>
         </form>
       </div>
     </section>
 
-    <section class="section section-alt" id="visit">
-      <div class="container visit-grid">
+    <section class="visit" id="visit">
+      <div class="wrap visit-inner">
         <div>
-          <h2 data-i18n="visit.title">زورونا</h2>
+          <h2 data-i18n="visit.title">وين نكون</h2>
           <p data-i18n="visit.address">طريق الكورنيش، حي الشاطئ، جدة</p>
         </div>
-        <dl class="hours">
-          <div><dt data-i18n="visit.week">السبت – الخميس</dt><dd dir="ltr">7:00 – 24:00</dd></div>
-          <div><dt data-i18n="visit.fri">الجمعة</dt><dd dir="ltr">13:00 – 24:00</dd></div>
-        </dl>
+        <table class="hours">
+          <tr><th data-i18n="visit.week">السبت إلى الخميس</th><td dir="ltr">7:00 – 24:00</td></tr>
+          <tr><th data-i18n="visit.fri">الجمعة</th><td dir="ltr">13:00 – 24:00</td></tr>
+        </table>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> <span data-i18n="brand">سراب</span></p>
-      <p class="muted" data-i18n="footer.demo">مشروع تجريبي لعلامة تجارية خيالية.</p>
+  <footer class="foot">
+    <div class="wrap">
+      <p><span data-i18n="brand">سراب</span> <span id="year"></span>. <span data-i18n="footer.demo">علامة تجارية خيالية، صممتها كمشروع للـ Portfolio.</span></p>
     </div>
   </footer>
 

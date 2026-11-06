@@ -32,27 +32,30 @@ function renderMenu(container, filter, lang) {
 
   container.innerHTML = "";
   for (const item of items) {
-    const card = document.createElement("article");
-    card.className = "menu-item";
+    const li = document.createElement("li");
 
-    const head = document.createElement("header");
-    const title = document.createElement("h3");
-    title.textContent = item.name[lang];
-    const price = document.createElement("span");
-    price.className = "price";
-    price.textContent = `${item.price} ${currency}`;
-    head.append(title, price);
-
-    const desc = document.createElement("p");
-    desc.textContent = item.desc[lang];
-
-    card.append(head, desc);
+    const line = document.createElement("div");
+    line.className = "line";
+    const name = document.createElement("span");
+    name.textContent = item.name[lang];
     if (item.tag) {
       const tag = document.createElement("span");
       tag.className = "tag";
       tag.textContent = item.tag[lang];
-      card.append(tag);
+      name.append(tag);
     }
-    container.append(card);
+    const dots = document.createElement("span");
+    dots.className = "dots";
+    const price = document.createElement("span");
+    price.className = "price";
+    price.textContent = `${item.price} ${currency}`;
+    line.append(name, dots, price);
+
+    const desc = document.createElement("p");
+    desc.className = "desc";
+    desc.textContent = item.desc[lang];
+
+    li.append(line, desc);
+    container.append(li);
   }
 }
